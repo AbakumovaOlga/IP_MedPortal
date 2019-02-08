@@ -1,0 +1,64 @@
+﻿
+@{
+    ViewBag.Title = "AddRecall";
+}
+
+@model WebTransportCompany.Models.Recall
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <div class="main">
+
+        <div class="content">
+            <div class="content_resize">
+                <div class="mainbar">
+                    <div class="article">
+                        <h2><span>Отличное решение </span> для ваших целей</h2>
+
+                        <div class="clr"></div>
+
+                        <h2>Раздел @ViewBag.Doctor.Name</h2>
+                        @using (Html.BeginForm("AddRecall", "Recall",
+FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+                            <h2>Отзыв</h2>
+                            <div>
+                                <input type="text" style="white-space: normal;" name="Name" id="width1" />
+                            </div>
+
+
+                            <h2>Комментарий</h2>
+                            <div>
+                                <input type="text" style="white-space: normal;" name="Comment" id="width" />
+                            </div>
+                            
+                            <input type="hidden" name="DoctorId" value="@ViewBag.Doctor.Id">
+                            <button type="submit" class="add" href="/Price/AddRecall">Добавить></button>
+                        }
+                        <div class="clr"></div>
+                    </div>
+                </div>
+                <div class="sidebar">
+                    <div class="clr"></div>
+                    <div class="gadget">
+                        <h2 class="star"><span>Главное</span> Меню</h2>
+                        <div class="clr"></div>
+                        <ul class="sb_menu">
+                            <a href="home.html">Главная</a>
+                            <a href="call.html">Вызвать врача на дом</a>
+                            <a href="/enroll/">Записаться к врачу</a>
+                            <a href="/contact/">Контакты</a>
+                        </ul>
+                    </div>
+                    <div class="gadget">
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>

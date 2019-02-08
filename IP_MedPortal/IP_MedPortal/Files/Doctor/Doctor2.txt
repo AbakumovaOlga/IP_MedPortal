@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Doctor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>2</Id>
+  <Name>Doctor1</Name>
+  <Specialty>efsdf</Specialty>
+  <Recalls>
+    <Recall>
+      <Id>2</Id>
+      <Name>rwe4</Name>
+      <DoctorId>2</DoctorId>
+      <Comment>gdf</Comment>
+      <Doctor_Id>0</Doctor_Id>
+    </Recall>
+    <Recall>
+      <Id>2</Id>
+      <Name>ghbg</Name>
+      <DoctorId>2</DoctorId>
+      <Comment>fdgf</Comment>
+      <Doctor_Id>0</Doctor_Id>
+    </Recall>
+    <Recall>
+      <Id>2</Id>
+      <Name>ff34r</Name>
+      <DoctorId>2</DoctorId>
+      <Comment>rerf</Comment>
+      <Doctor_Id>0</Doctor_Id>
+    </Recall>
+  </Recalls>
+</Doctor>

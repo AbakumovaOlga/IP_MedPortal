@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<Doctor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>1</Id>
+  <Name>ljhbhbkj</Name>
+  <Specialty>fddd</Specialty>
+  <Recalls>
+    <Recall>
+      <Id>1</Id>
+      <Name>43</Name>
+      <DoctorId>1</DoctorId>
+      <Comment>fffgf</Comment>
+      <Doctor_Id>0</Doctor_Id>
+    </Recall>
+  </Recalls>
+</Doctor>

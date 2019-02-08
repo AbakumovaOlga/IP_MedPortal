@@ -1,0 +1,63 @@
+﻿
+@model WebTransportCompany.Models.Procedure
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<body>
+    <div class="main">
+
+        <div class="content">
+            <div class="content_resize">
+                <div class="mainbar">
+                    <div class="article">
+                        <h2><span>Отличное решение </span> для ваших целей</h2>
+
+                        <div class="clr"></div>
+
+
+                        @using (Html.BeginForm())
+    {
+
+                    @Html.LabelFor(model => model.Name, "Название")
+                    <br />
+                    @Html.EditorFor(model => model.Name)
+                    <br /><br />
+                    @Html.LabelFor(model => model.PriceOfProc, "Номер")
+                    <br />
+                    @Html.EditorFor(model => model.PriceOfProc)
+                    <br /><br />
+
+
+                    <input type="submit" value="Добавить" />
+}
+                        <div class="clr"></div>
+                    </div>
+
+                </div>
+                <div class="sidebar">
+                    <div class="clr"></div>
+                    <div class="gadget">
+                        <h2 class="star"><span>Главное</span> Меню</h2>
+                        <div class="clr"></div>
+                        <ul class="sb_menu">
+                            <a href="home.html">Главная</a>
+                            <a href="call.html">Вызвать врача на дом</a>
+                            <a href="/enroll/">Записаться к врачу</a>
+                            <a href="/contact/">Контакты</a>
+                        </ul>
+                    </div>
+                    <div class="gadget">
+                    </div>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+
+
+
